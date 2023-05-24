@@ -4,11 +4,11 @@ import Icon from './Icon.astro';
 ---
 
 <aside>
-	<h2>Vous voulez garder mon CV sous le coude ?</h2>
 	<CallToAction href="/assets/CV_Sebastien_Dru.pdf">
 		Télécharger mon CV
 		<Icon icon="pdf" size="1.2em" />
 	</CallToAction>
+	<h2>Vous voulez garder mon CV sous le coude ?</h2>
 </aside>
 
 <style>
@@ -32,7 +32,7 @@ import Icon from './Icon.astro';
 
 	@media (min-width: 50em) {
 		aside {
-			padding: 7.5rem;
+			padding: 3rem 7.5rem;
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: space-evenly;

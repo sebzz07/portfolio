@@ -27,7 +27,7 @@ import { getCollection } from 'astro:content';
 	---
 
 	<BaseLayout>
-		<div class="stack gap-20 lg:gap-48">
+		<div class="stack">
 			<div class="wrapper stack gap-8 lg:gap-20">
 				<header class="profil">
 					<img
@@ -116,13 +116,6 @@ import { getCollection } from 'astro:content';
 			margin-bottom: 0.5rem;
 		}
 
-		.title,
-		.subtitle,
-		.tagline {
-			max-width: 37ch;
-			margin-inline: auto;
-		}
-
 		.title {
 			font-size: var(--text-3xl);
 			color: var(--gray-0);
@@ -156,7 +149,7 @@ import { getCollection } from 'astro:content';
 
 		.subtitle {
 			font-size: 2.125rem;
-			color: var(--accent-dark);
+			color: var(--accent-regular);
 		}
 
 		@media (min-width: 50em) {
@@ -172,6 +165,7 @@ import { getCollection } from 'astro:content';
 				grid-template-columns: 1fr 1fr;
 				padding-inline: 2.5rem;
 				gap: 3.75rem;
+				padding: 0 2rem 2rem 2rem;
 			}
 
 			.roles {
