@@ -1,120 +1,291 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
----
+// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+	import BaseLayout from '../layouts/BaseLayout.astro';
 
-<BaseLayout title="A propos | Sébastien Dru" description="A propos de Sébastien Dru">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="A propos de moi"
-				tagline="Pour plus de détails sur mon parcours"
-			>
-				<img
-					width="1553"
-					height="670"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
-			</Hero>
+	// Component Imports
+	import CallToAction from '../components/CallToAction.astro';
+	import Grid from '../components/Grid.astro';
+	import Hero from '../components/Hero.astro';
+	import Icon from '../components/Icon.astro';
+	import Pill from '../components/Pill.astro';
+	import PortfolioPreview from '../components/PortfolioPreview.astro';
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
-		</main>
+	// Page section components
+	import ContactCTA from '../components/ContactCTA.astro';
+	import CvCTA from '../components/CvCTA.astro';
+	import Skills from '../components/Skills.astro';
 
-		<ContactCTA />
-	</div>
-</BaseLayout>
+	// Content Fetching: List four most recent work projects
+	const projects = (await getCollection('work'))
+	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+	.slice(0, 4);
 
-<style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+	// Full Astro Component Syntax:
+	// https://docs.astro.build/core-concepts/astro-components/
+	---
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+	<BaseLayout>
+		<div class="stack gap-20 lg:gap-48">
+			<div class="wrapper stack gap-8 lg:gap-20">
+				<header class="profil">
+					<img
+							alt="Sébastien Dru, Développeur back-end"
+							width="2323"
+							height="2322"
+							src="/assets/portrait.jpg"
+					/>
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+					<div class=" stack gap-2 start">
+						<h1 class="title margin-l">Sébastien Dru</h1>
+						<h2 class="subtitle margin-l">Développeur Back-End PHP/Symfony</h2>
+						<p class="tagline">Après plus de 10 ans d'expérience dans le commerce du vin, je souhaite revenir à ma passion première. Me basant sur ma formation initiale en C++, j'ai entamé depuis 3 ans ma reconversion en autodidacte puis par une formation diplômante. Mon stage m'a confirmé la valeur des compétences que j'ai acquise et que je propose aujourd'hui.</p>
+					</div>
+				</header>
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+				<main class="details wrapper stack gap-20 lg:gap-48">
+					<div class="stack gap-4 start">
+						<h4 class="subtitle margin-l">Technologies</h4>
+						<div>
+							<h5>Back End</h5>
+							<p>PHP, Symfony, PHPUnit</p>
+						</div>
+						<div>
+							<h5>Front EndFront End</h5>
+							<p>JavaScript, SCSS, Bootstrap, Twig</p>
+						</div>
+						<div>
+							<h5>Autres</h5>
+							<p>GitHub, Wordpress, Linux</p>
+						</div>
 
-	.content {
-		grid-column: 2 / 4;
-	}
+					</div>
+					<div class="stack gap-4 start">
+						<h4 class="subtitle margin-l">Experiences</h4>
+						<div>
+							<h5>Stage chez Networks Technology</h5>
+							<p>Janvier - Février 2023 à Boulogne-Billancourt </p>
+							<p>Intégration d'emails, Corrections de bugs sur des projets Symfony (v3 - v5), Intégration Front End.</p>
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+						</div>
+						<div>
+							<h5>Gérant de magasin Chez Nicolas</h5>
+							<p>2010 - Actuellement</p>
+							<p>Clientèle BtoB et BtoC, dans un secteur touristique haut de gamme</p>
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+						</div>
+					</div>
 
-	@media (min-width: 50em) {
-		.about {
+					<div class="stack gap-4 start">
+						<h4 class="subtitle margin-l">Formations</h4>
+						<div>
+							<h5>Développeur d'application Bac +4
+								PHP/Symfony - OpenClassRooms</h5>
+							<p>2022 - 2023</p>
+						</div>
+						<div>
+							<h5>Master D'Economie Bac +5
+								Université de Bourgogne, Dijon</h5>
+							<p>2004 - 2010</p>
+						</div>
+						<div>
+							<h5>BTS Informatique et Réseau Bac + 2
+								Institut Lemonnier, Caen</h5>
+							<p>2002 - 2004</p>
+						</div>
+					</div>
+					<div class="stack gap-4 start">
+						<h4 class="subtitle margin-l">Centres d'intérêts</h4>
+							<p>Raspberry, Marathon, Gastronomie</p>
+					</div>
+
+
+				</main>
+			</div>
+
+			<CvCTA />
+
+			<ContactCTA />
+		</div>
+	</BaseLayout>
+
+	<style>
+
+		.margin-l {
+			margin-bottom: 0.5rem;
+		}
+
+		.title,
+		.tagline {
+			max-width: 37ch;
+			margin-inline: auto;
+		}
+
+		.title {
+			font-size: var(--text-3xl);
+			color: var(--gray-0);
+		}
+
+		.profil {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+		}
+
+		.details {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			gap: 2rem;
+		}
+
+		.roles {
+
+			display: none;
+		}
+
+		.profil img {
+			object-fit: cover;
+			object-position: top;
+			border-radius: 1.5rem;
+			box-shadow: var(--shadow-md);
+		}
+
+		.subtitle {
+			font-size: 2.125rem;
+			color: #c561f6;
+		}
+
+		@media (min-width: 50em) {
+			.profil {
+				display: grid;
+				grid-template-columns: 3fr 6fr;
+				padding-inline: 2.5rem;
+				gap: 3.75rem;
+			}
+
+			.details {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				padding-inline: 2.5rem;
+				gap: 3.75rem;
+			}
+
+			.roles {
+				margin-top: 0.5rem;
+				display: flex;
+				gap: 0.5rem;
+			}
+
+			.profil img {
+				border-radius: 4.5rem;
+				object-fit: cover;
+			}
+			.start {
+				text-align: start;
+			}
+		}
+
+		/* ====================================================== */
+
+		.section {
 			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
+			gap: 2rem;
 		}
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
+		.with-background {
+			position: relative;
 		}
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
+		.with-background::before {
+			--hero-bg: var(--bg-image-subtle-2);
+
+			content: '';
+			position: absolute;
+			pointer-events: none;
+			left: 50%;
+			width: 100vw;
+			aspect-ratio: calc(2.25 / var(--bg-scale));
+			top: 0;
+			transform: translateY(-75%) translateX(-50%);
+			background: url('/assets/backgrounds/noise.png') top center/220px repeat,
+			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat, var(--gray-999);
+			background-blend-mode: overlay, normal, normal, normal;
+			mix-blend-mode: var(--bg-blend-mode);
+			z-index: -1;
 		}
-	}
-</style>
+
+		.with-background.bg-variant::before {
+			--hero-bg: var(--bg-image-subtle-1);
+		}
+
+		.section-header {
+			justify-self: center;
+			text-align: center;
+			max-width: 50ch;
+			font-size: var(--text-md);
+			color: var(--gray-300);
+		}
+
+		.section-header h3 {
+			font-size: var(--text-2xl);
+		}
+
+		@media (min-width: 50em) {
+			.section {
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-areas: 'header header header header' 'gallery gallery gallery gallery';
+				gap: 5rem;
+			}
+
+			.section.with-cta {
+				grid-template-areas: 'header header header cta' 'gallery gallery gallery gallery';
+			}
+
+			.section-header {
+				grid-area: header;
+				font-size: var(--text-lg);
+			}
+
+			.section-header h3 {
+				font-size: var(--text-4xl);
+			}
+
+			.with-cta .section-header {
+				justify-self: flex-start;
+				text-align: left;
+			}
+
+			.gallery {
+				grid-area: gallery;
+			}
+
+			.cta {
+				grid-area: cta;
+			}
+		}
+
+		/* ====================================================== */
+
+		.mention-card {
+			display: flex;
+			height: 7rem;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			border: 1px solid var(--gray-800);
+			border-radius: 1.5rem;
+			color: var(--gray-300);
+			background: var(--gradient-subtle);
+			box-shadow: var(--shadow-sm);
+		}
+
+		@media (min-width: 50em) {
+			.mention-card {
+				border-radius: 1.5rem;
+				height: 9.5rem;
+			}
+		}
+	</style>
