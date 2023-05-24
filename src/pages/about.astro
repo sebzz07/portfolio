@@ -117,6 +117,7 @@ import { getCollection } from 'astro:content';
 		}
 
 		.title,
+		.subtitle,
 		.tagline {
 			max-width: 37ch;
 			margin-inline: auto;
@@ -155,7 +156,7 @@ import { getCollection } from 'astro:content';
 
 		.subtitle {
 			font-size: 2.125rem;
-			color: #c561f6;
+			color: var(--accent-dark);
 		}
 
 		@media (min-width: 50em) {
