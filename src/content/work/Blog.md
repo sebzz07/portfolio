@@ -7,21 +7,21 @@ description: |
    Blog de développeur
 tags:
 - Projet de formation
-- Php
+- PHP
 - MVC
-- twig
+- Twig
 ---
 
-L'un des projets de ma formation qui présente mon profile de développeur et des articles.
-Application developpé en php en appliquant une organisation Model Vue Controlleur. 
-L'application possède un systeme d'authentification avec différents droits selon le rôle.
-Le front utilise twig.
+Voici l'un des projets de ma formation présentant mon profil de développeur avec une partie blog.
+Application developpée en PHP en utilisant une organisation Model View Controller. 
+L'application possède un systéme d'authentification avec différents droits selon le rôle.
+Le front utilise Twig.
 
 Démonstration de l'application :
 
 <a href="https://sebdru.fr/Blog-Php/index.php" target="_blank">Blog de développeur</a>
 
-compte de démonstration :
+Compte de démonstration :
 
 root//Root@1234
 

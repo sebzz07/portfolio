@@ -13,8 +13,8 @@ tags:
 - D3.js
 ---
 
-Durant ma période autodidacte 2020/2021, je me forme sur differentes technologies via notamement FreeCodeCamp 
-qui m'a permis d'acquerir l'aisence suffissante pour me lancer dans l'apprentissage professionnel du code.
+Durant ma période autodidacte en 2020 et 2021, je me suis formé sur différentes technologies via notamment FreeCodeCamp, 
+ce qui m'a permis d'acquérir une certaine aisance pour me lancer dans l'apprentissage professionnel du code.
 
 Mes projets CodePen : 
 

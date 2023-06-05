@@ -11,14 +11,14 @@ tags:
   - Ajax
 ---
 
-L'un des projets de ma formation qui permet de discuter autour des figures de snowboard.
-Application developpé avec Symfony avec un systeme d'authentification (SecurityBundle) avec différents droits selon le rôle. 
+Un projet collaboratif permettant de discuter autour des figures de snowboard.
+Application developpée sous Symfony avec un système d'authentification (SecurityBundle) et différents droits selon le rôle. 
 
 Démonstration de l'application : 
 
 <a href="http://snowtricks.sebdru.fr/" target="_blank">Snowtricks</a>
 
-compte de démonstration : 
+Compte de démonstration : 
 
 user//user; admin//admin
 

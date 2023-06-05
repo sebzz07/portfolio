@@ -13,13 +13,13 @@ tags:
 ---
 
 L'un des projets de ma formation présentant un site d'agence immobilière avec gestion des offres en back-office.
-Le site est développé avec wordpress et ACF avec un thème enfant personalisé. 
+Le site est développé avec Wordpress et ACF avec un thème enfant personnalisé. 
 
 Démonstration de l'application :
 
 <a href="https://sebdru.fr/ChaletWordpress/" target="_blank">Agence Immobilère - Chalets et Caviar</a>
 
-compte de démonstration :
+Compte de démonstration :
 
 MCavalain//@gencech@letetcaviar
 

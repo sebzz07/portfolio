@@ -4,7 +4,7 @@ publishDate: 2022-01-20 12:00:00
 img: /assets/maquette.jpg
 img_alt: Ciné Monceau
 description: | 
-   Maquette de presentation d'un site de festival
+   Maquette de présentation d'un site de festival
 tags:
 - Projet de formation
 - HTML
@@ -13,8 +13,8 @@ tags:
 - Responsive
 ---
 
-L'un des projets de ma formation qui présente la maquette d'un site de festival de cinéma.
-Maquette développé en html et SCSS. le dépot github héberge le cahier des charges et l'analyse des besoins client.
+Ce projet de ma formation présente la maquette d'un site de festival de cinéma.
+Maquette développée en HTML et SCSS. Le dépôt Github héberge le cahier des charges et l'analyse des besoins client.
 
 Rendu de la maquette :
 
