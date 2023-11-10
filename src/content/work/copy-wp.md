@@ -17,7 +17,7 @@ Le site est développé avec Wordpress et ACF avec un thème enfant personnalis�
 
 Démonstration de l'application :
 
-<a href="https://sebdru.fr/loxamed/" target="_blank">Reproduction d'un site Wordpress</a>
+<a href="https://www.sebdru.fr/loxamed/" target="_blank">Reproduction d'un site Wordpress</a>
 
 
 

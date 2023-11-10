@@ -17,7 +17,7 @@ Le site est développé avec Wordpress et ACF avec un thème enfant personnalis�
 
 Démonstration de l'application :
 
-<a href="https://sebdru.fr/ChaletWordpress/" target="_blank">Agence Immobilère - Chalets et Caviar</a>
+<a href="https://www.sebdru.fr/ChaletWordpress/" target="_blank">Agence Immobilère - Chalets et Caviar</a>
 
 Compte de démonstration :
 

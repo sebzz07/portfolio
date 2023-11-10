@@ -19,7 +19,7 @@ Le front utilise Twig.
 
 Démonstration de l'application :
 
-<a href="https://sebdru.fr/Blog-Php/index.php" target="_blank">Blog de développeur</a>
+<a href="https://www.sebdru.fr/Blog-Php/" target="_blank">Blog de développeur</a>
 
 Compte de démonstration :
 

@@ -18,7 +18,7 @@ Maquette développée en HTML et SCSS. Le dépôt Github héberge le cahier des 
 
 Rendu de la maquette :
 
-<a href="https://sebdru.fr/filmspleinair/index.html" target="_blank">Ciné Monceau - Les Films de Plein Air</a>
+<a href="https://www.sebdru.fr/filmspleinair/" target="_blank">Ciné Monceau - Les Films de Plein Air</a>
 
 Github :
 
