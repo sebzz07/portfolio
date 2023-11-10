@@ -1,6 +1,6 @@
 ---
 title: Blog de développeur
-publishDate: 2022-01-20 12:00:00
+publishDate: 2021-12-20 12:00:00
 img: /assets/blog-php.jpg
 img_alt: Blog
 description: | 
