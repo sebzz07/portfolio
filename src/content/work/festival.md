@@ -1,7 +1,7 @@
 ---
 title: Maquette Ciné Monceau
 publishDate: 2022-01-18 12:00:00
-img: /assets/maquette.jpg
+img: ./maquette.jpg
 img_alt: Ciné Monceau
 description: | 
    Maquette de présentation d'un site de festival

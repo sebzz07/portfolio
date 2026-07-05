@@ -1,7 +1,7 @@
 ---
 title: Snowbord - le wiki du snowboard
 publishDate: 2022-01-20 12:00:00
-img: /assets/snowtricks.jpg
+img: ./snowtricks.jpg
 img_alt: Site communautaire Snowtricks
 description: |
   Application de discussion autour des figures de snowboard

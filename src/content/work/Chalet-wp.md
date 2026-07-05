@@ -1,7 +1,7 @@
 ---
 title: Agence Immobilière - Wordpress
 publishDate: 2022-01-19 12:00:00
-img: /assets/Chalet-wp.jpg
+img: ./Chalet-wp.jpg
 img_alt: Chalet et Caviar
 description: | 
    Site de présentation de biens immobiliers

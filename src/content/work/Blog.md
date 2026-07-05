@@ -1,7 +1,7 @@
 ---
 title: Blog de développeur
 publishDate: 2021-12-20 12:00:00
-img: /assets/blog-php.jpg
+img: ./blog-php.jpg
 img_alt: Blog
 description: | 
    Blog de développeur

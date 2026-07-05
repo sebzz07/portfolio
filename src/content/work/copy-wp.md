@@ -1,7 +1,7 @@
 ---
 title: Reproduction d'un site - Wordpress
 publishDate: 2022-01-05 12:00:00
-img: /assets/copy-wp.jpg
+img: ./copy-wp.jpg
 img_alt: Reproduction d'un site
 description: | 
    Reproduction d'un site Wordpress

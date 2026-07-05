@@ -1,8 +1,6 @@
 ---
 title: BileMo - API BtoB
 publishDate: 2022-02-20 12:00:00
-img: /assets/bilemo.jpg
-img_alt: API BileMo
 description: |
   API REST avec authentification
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Mes projets CodePen
 publishDate: 2021-10-20 12:00:00
-img: /assets/codepen.jpg
+img: ./codepen.jpg
 img_alt: Codepen
 description: |
    Mes projets CodePen
