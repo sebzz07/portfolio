@@ -1,0 +1,36 @@
+name: Deploy to OVH
+
+# Déclenchement manuel uniquement pour l'instant : les runners GitHub Actions
+# utilisent des IP cloud (Azure) qui peuvent être bloquées par certains hébergeurs.
+# Une fois un déploiement manuel réussi confirmé, ajouter le déclenchement
+# automatique sur push vers main (voir commentaire en bas de fichier).
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.OVH_FTP_HOST }}
+          username: ${{ secrets.OVH_FTP_USER }}
+          password: ${{ secrets.OVH_FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./dist/
+          server-dir: ./www/
+
+# Pour activer le déploiement automatique après un merge sur main,
+# remplacer le bloc `on:` ci-dessus par :
+#
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches: [main]
