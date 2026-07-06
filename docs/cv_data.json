@@ -1,0 +1,78 @@
+{
+  "identity": {
+    "name": "Sébastien Dru",
+    "title": "Développeur Web Full-Stack",
+    "subtitle": "PHP/WordPress & JavaScript/TypeScript",
+    "title_alternatives": [
+      "Développeur PHP/WordPress",
+      "Développeur Web & Chef de Projet Technique"
+    ],
+    "photo": "portrait.jpg",
+    "contact": {
+      "email": "contact@sebdru.fr",
+      "phone": "06 64 27 96 26",
+      "website": "sebdru.fr",
+      "location": "Boulogne-Billancourt et communes limitrophes, Paris Ouest"
+    },
+    "status": "Auto-entrepreneur"
+  },
+  "summary": "Développeur web PHP/WordPress avec une bonne pratique de JavaScript/TypeScript, à l'aise aussi bien en développement qu'en coordination technique de projet. J'intègre les outils de développement assisté par IA dans mon flux de travail pour livrer vite sans sacrifier la qualité. Parcours atypique — reconversion réussie vers le développement après plusieurs années en gestion — qui m'apporte autonomie et sens du concret.",
+  "skills": {
+    "Back-end": ["PHP", "Symfony", "WordPress (thèmes avancés Sage/Roots)", "Node.js"],
+    "Front-end": ["JavaScript", "TypeScript", "Angular", "HTML / CSS / SCSS", "Twig"],
+    "Outils & pratiques": ["Git / GitHub", "Linux", "Développement assisté par IA (Claude Code)", "Coordination technique de projet", "AWS (notions)"]
+  },
+  "experience": [
+    {
+      "title": "Développeur Web Freelance",
+      "organization": "Groupe Canalous",
+      "context": "Secteur nautique/fluvial — plusieurs marques du groupe (Les Canalous, France Passion Plaisance, CPC Chantier Naval, FluvialNet)",
+      "period": "2023 — Aujourd'hui",
+      "bullets": [
+        "Chef de projet sur le lot thème/WordPress lors de la migration d'un site vers une infrastructure AWS, en coordination avec un DevOps (infrastructure) et un développeur (moteur de recherche & paiement)",
+        "Maintenance du module Symfony (gestion des utilisateurs, archives PDF du magazine) sur FluvialNet, site multi-stack racheté par le groupe (WordPress + PHP historique hérité de l'ancienne équipe)",
+        "Développement de thèmes WordPress avancés (Sage/Roots, Blade) sur plusieurs marques du groupe",
+        "Intégration de fonctionnalités sur une application de planning en Angular / Node.js / TypeScript",
+        "Développement assisté par IA au quotidien (sites vitrine), et prototypage d'un MVP de génération d'articles (Python) pour FluvialNet, encore en R&D"
+      ]
+    },
+    {
+      "title": "Développeur Web — Stage",
+      "organization": "Networks Technology",
+      "context": "Boulogne-Billancourt",
+      "period": "Janvier — Février 2023",
+      "bullets": [
+        "Corrections de bugs sur applications Symfony (v3 à v5)",
+        "Intégration front-end et WordPress",
+        "Intégration d'emails transactionnels"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Développeur d'application Bac+4 — PHP/Symfony",
+      "organization": "OpenClassRooms",
+      "period": "2022 — 2023",
+      "detail": "Projets de validation : site communautaire (Symfony/Bootstrap/JS/MySQL), migration Symfony 3.1 → 6.2, API REST (Symfony/JWT/Nelmio/PagerFanta)"
+    },
+    {
+      "title": "Master d'Économie Bac+5",
+      "organization": "Université de Bourgogne, Dijon",
+      "period": "2004 — 2010"
+    },
+    {
+      "title": "BTS Informatique et Réseau Bac+2",
+      "organization": "Institut Lemonnier, Caen",
+      "period": "2002 — 2004"
+    }
+  ],
+  "personal_projects": [
+    { "name": "Portfolio personnel", "tech": "Astro, TypeScript", "note": "sebdru.fr" }
+  ],
+  "interests": ["Raspberry Pi", "Marathon", "Gastronomie"],
+  "_meta": {
+    "generated": "2026-07-06",
+    "source": "Analyse de l'activité GitHub (42 repos) + ancien CV (sortie de formation 2023) + entretien avec Sébastien",
+    "not_included_on_purpose": "Emploi non-dev actuel (temps plein en parallèle du freelance dev ~2j/semaine) — volontairement omis pour présenter un profil orienté 100% dev, cf. objectif du CV"
+  }
+}
